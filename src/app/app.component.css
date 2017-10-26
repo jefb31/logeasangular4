@@ -1,0 +1,98 @@
+
+/*h1{
+	color: red;
+}*/
+
+body{ 
+background: salmon}
+
+/* partie css de la navbar*/
+
+
+.navbar-brand{
+	padding: 0px;
+}
+.navbar-brand>img{
+	height: 110%;
+  padding: 10px;
+  width: auto;
+}
+.panel.with-nav-tabs .panel-heading{
+    padding: 5px 5px 0 5px;
+}
+.panel.with-nav-tabs .nav-tabs{
+	border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified{
+	margin-bottom: -1px;
+}
+
+/* partie pour la rotation du logo logeas*/
+ .rotate{
+    -moz-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.rotate:hover {
+    -moz-transform: rotate(1080deg);
+    -webkit-transform: rotate(1080deg);
+    -o-transform: rotate(1080deg);
+    -ms-transform: rotate(1080deg);
+    transform: rotate(1080deg);
+} 
+
+/* partie css de la sidebar */
+
+.leftMenuApp{
+	display: block;
+	float: left;
+	margin: 0 0 10px 10px;
+}
+
+.sideMenu {
+	background-color: #e6e6e6;
+	position: fixed;
+	left: 0;
+	display: inline;
+	bottom: 0;
+	top: 51px; /*Décallage pour le menu du haut*/
+	width: 160px;
+	height: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .sideMenu {
+        display: none;
+    }
+}
+
+   /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+

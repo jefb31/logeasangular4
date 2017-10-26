@@ -1,0 +1,93 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div style="text-align:center ; margin-top: 80px">
+  <p>
+    je suis la page app.component.html
+  </p>
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  
+</div>  
+<br/>
+
+
+
+<!-- la navbar du site logeas-->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-controls="navbar">
+        <!--span class="sr-only">Afficher/masquer menu</span-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a  href="#/" class="navbar-brand" href="Default"><img class="rotate img-responsive" id="logo" src="../assets/pictures/LogoNew.png" alt="LoGeAs" /></a>
+
+      <!-- N'est visible qu'en XS et affiche le menu des écrans -->
+<!--      <ul class="nav navbar-nav mobileNav visible-xs">
+        <li>
+          <div class="dropdown"> -->
+            
+
+    </div>
+    <div class="collapse navbar-collapse" id="navbar1">
+      <!-- Partie gauche -->
+      <ul class="nav navbar-nav">
+        <li class=""><a href="#"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+         <!--enlever l annuaire de la nav bar pour le placer dans la sidebar       
+        <li><a href="#/ActAnnuaire"><i class="fa fa-book" aria-hidden="true"></i> Annuaire</a></li>-->
+        <li><a href="https://wiki.logeas.fr/" target="_blank"><span class="glyphicon glyphicon-info-sign"></span> Aide</a></li>
+
+        <!-- regarder si fonctione en ecran mobile sinon le retirer-->
+        <!--<li><a href=""><span class="sr-only">Familles</span><span class="visible-xs-inline">Familles</span></a></li>
+        <li><a href=""><span class="sr-only">Personnes</span><span class="visible-xs-inline">Personnes</span></a></li>-->
+        
+      </ul>
+      <!-- Partie droite -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{main.AdressePGI}}pgi/InformationUtilisateur">Voir mon profil</a></li>
+        <li><a href="Logout"><span class="glyphicon glyphicon-off iconInfoOut"></span><span class="visible-xs-inline"> Déconnexion</span>
+            <span class="sr-only">Déconnexion</span>
+          </a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+</nav>
+  
+
+  <!-- emplacement pour la sidebar gauche responsive -->
+
+  <div class="container wrapper sideMenu">
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <span class=""> <h4>Fichier</h4></span>
+        <a href="#/" target="_self"><div class="leftMenuApp Famille"><li><img src="../assets/icon/famille.png"/>Familles</li></div></a>
+        <a href="#/" target="_self"><div class="leftMenuApp Personne"><li><img src="../assets/icon/personne.png"/>Personnes</li></div></a>
+        <hr/>
+        <a href="#/" target="_self"><div class="leftMenuApp Annuaire"><li><img src="../assets/icon/annuaire.png"/>Annuaire</li></div></a>
+        
+        <!-- <span><li><a href="#/ActGroupe"><img src=".static/icon/groupe.png"/> Groupes</a></li></span>
+        <span><h4> Autres</h4></span>
+        <span><li><a href="#/ActEtat"><img src=".static/icon/etat.png"/> Etats</a></li></span> -->
+      </ul>
+      <hr>
+          <footer>
+            <small>&copy;Logeas Informatique <script>document.write(new Date().getFullYear());</script>.<br>Tous droits réservés.</small>
+          </footer>     
+      
+    </div>
+  </div>
+
+  
+  <app-journaldev></app-journaldev>
+  
+  <app-annuaire></app-annuaire>
+
+  <app-famille></app-famille>
+
+  <!--<router-outlet></router-outlet>-->
